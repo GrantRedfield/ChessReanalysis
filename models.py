@@ -48,4 +48,4 @@ class Move(Model):
             (('game', 'color', 'number'), True),
         )
 
-db.create_tables([Player, Game, GamePlayer, Move], True)
+db.create_tables([Player, Game, GamePlayer, Move], safe=True)
